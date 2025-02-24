@@ -99,7 +99,7 @@ export default function ParticlesBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 -z-10 bg-black"
+      className="fixed -z-10 bg-black"
       style={{ pointerEvents: 'none' }}
     />
   );

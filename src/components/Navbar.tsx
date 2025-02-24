@@ -62,7 +62,7 @@ export default function Navbar() {
         TESTING APP: Please switch your wallet network to{" "}
         {NETWORK == "testnet" ? "testnet4" : NETWORK} manually.
       </div>
-      <nav className="relative z-10 bg-[#0f0f11]/50 border-b border-gray-700/30 px-6 py-4">
+      <nav className="bg-[#0f0f11]/50 border-b border-gray-700/30 px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="/" className="text-white text-2xl font-bold">
@@ -71,7 +71,7 @@ export default function Navbar() {
 
           {/* Address Dropdown */}
           {paymentAddress ? (
-            <div className="relative">
+            <div>
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className="flex items-center space-x-2 bg-[#1a1a1a] hover:bg-[#252525] text-white px-4 py-2 rounded-lg transition-colors border border-gray-700"
@@ -97,7 +97,7 @@ export default function Navbar() {
               </button>
 
               {isDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-72 bg-[#1a1a1a] backdrop-blur-md rounded-lg shadow-lg py-3 px-4 border border-gray-700">
+                <div className="absolute right-6 mt-2 w-72 bg-[#1a1a1a] rounded-lg shadow-lg py-3 px-4 border border-gray-700">
                   <div className="space-y-4">
                     <div>
                       <p className="text-gray-400 text-sm mb-1">Balance:</p>
